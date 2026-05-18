@@ -1,6 +1,24 @@
 # KisanSetu
 
+A full-stack farmer-to-buyer marketplace platform built using Angular 21, Node.js, Express.js, and PostgreSQL.
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+
+
+## Features
+
+- Farmer product listings
+- Buyer marketplace
+- JWT authentication
+- Responsive UI
+- PostgreSQL database integration
+
+## Technologies
+
+- Angular 21
+- PrimeNG
+- Node.js
+- Express.js
+- PostgreSQL
 
 ## Development server
 
