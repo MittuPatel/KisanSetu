@@ -1,0 +1,36 @@
+<div class="login-container">
+
+  <p-card header="Login to KisanSetu" class="login-card">
+
+    <div class="field">
+      <label>Email</label>
+      <input pInputText [(ngModel)]="email" placeholder="Enter email" />
+    </div>
+
+    <div class="field">
+      <label>Password</label>
+      <p-password [(ngModel)]="password" [toggleMask]="true"></p-password>
+    </div>
+    <div class="field-checkbox">
+  <p-checkbox
+    [(ngModel)]="rememberMe"
+    binary="true"
+    inputId="remember">
+  </p-checkbox>
+
+  <label for="remember" class="ml-2">Remember me</label>
+</div>
+
+    <button
+      pButton
+      label="Login"
+      icon="pi pi-sign-in"
+      class="login-btn"
+      (click)="login()">
+    </button>
+
+  </p-card>
+  <!-- <p-card header="Register to KisanSetu" class="register-card login-card"> -->
+   <app-register></app-register>
+<!-- </p-card> -->
+</div>

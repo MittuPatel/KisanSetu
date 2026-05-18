@@ -1,0 +1,98 @@
+/* HERO */
+.about-hero {
+  position: relative;
+  height: 70vh;
+
+  background-image: url('/images/cow_in_farm.jpg');
+  background-size: cover;
+  background-position: center;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+}
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+/* MAIN CONTENT */
+.about-container {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+/* SECTION */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+
+  margin-bottom: 80px;
+}
+
+/* Reverse layout */
+.reverse {
+  direction: rtl;
+}
+
+.reverse .about-text {
+  direction: ltr;
+}
+
+/* TEXT */
+.about-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.about-text p,
+.about-text li {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* IMAGES */
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .about-container {
+    width: 90%;
+  }
+
+}

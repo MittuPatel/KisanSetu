@@ -1,0 +1,41 @@
+<div class="p-4">
+
+  <!-- Search + Filter -->
+  <div class="flex gap-3 mb-4">
+    <input
+      pInputText
+      placeholder="Search by city or Zipcode"
+      [(ngModel)]="searchText" />
+
+    <p-select
+      [options]="states"
+      [(ngModel)]="selectedState"
+      placeholder="Select State">
+    </p-select>
+  </div>
+
+  <!-- Location Cards -->
+<div class="grid">
+
+  @for (loc of filteredLocations; track loc) {
+    <div class="col-12 md:col-4">
+
+      <p-card [header]="loc.name">
+        <p><b>City:</b> {{ loc.city }}</p>
+        <p><b>Address:</b> {{ loc.address }}</p>
+        <p><b>Phone:</b> {{ loc.phone }}</p>
+        <p><b>PIN:</b> {{ loc.pincode }}</p>
+
+        <button
+          pButton
+          label="View on Map"
+          (click)="openMap(loc)">
+        </button>
+      </p-card>
+
+    </div>
+  }
+
+</div>
+
+</div>

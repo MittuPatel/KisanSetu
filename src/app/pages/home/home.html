@@ -1,0 +1,90 @@
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+     <video class="bg-video" autoplay muted loop playsinline>
+    <source src="/videos/grainfarm.mp4"  type="video/mp4" />
+    </video>
+    <div class="overlay-content">
+    <h1>Fresh from Farmers to Your Door</h1>
+    <p>Buy directly from local farmers across India</p>
+    <button pButton label="Shop Now" class="cta-btn"></button>
+</div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<!-- <section class="categories">
+  <div class="cat">🌾 Grains</div>
+  <div class="cat">🥦 Vegetables</div>
+  <div class="cat">🍎 Fruits</div>
+  <div class="cat">🌶️ Spices</div>
+</section> -->
+
+<div class="feature-section">
+  <div class="feature-card">
+    <i class="pi pi-map-marker feature-icon"></i>
+    <span>Find Your Market</span>
+  </div>
+
+  <div class="feature-card">
+    <i class="pi pi-shopping-bag feature-icon"></i>
+    <span>Sell on KisanSetu</span>
+  </div>
+
+  <div class="feature-card">
+    <i class="pi pi-plus-circle feature-icon"></i>
+    <span>Create Your Market</span>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="products">
+  <h2>Featured Products</h2>
+
+  <div class="product-grid">
+    @for (p of products; track p) {
+    <p-card >
+      <h3>{{ p.name }}</h3>
+      <p>{{ p.price }}</p>
+      <button pButton label="Add to Cart"></button>
+    </p-card>
+  }
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <h2>How It Works</h2>
+
+  <div class="steps">
+    <div>
+      <h3>1. Farmers List Products</h3>
+      <p>Upload crops and prices easily</p>
+    </div>
+
+    <div>
+      <h3>2. Buyers Browse</h3>
+      <p>Find fresh produce near you</p>
+    </div>
+
+    <div>
+      <h3>3. Direct Purchase</h3>
+      <p>No middlemen, better prices</p>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story">
+  <div class="story-text">
+    <h2>Meet Our Farmers</h2>
+    <p>We connect local farmers directly to consumers, ensuring fair pricing and fresh produce.</p>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <h2>Stay Updated</h2>
+  <input type="email" placeholder="Enter your email" />
+  <button pButton label="Subscribe"></button>
+</section>

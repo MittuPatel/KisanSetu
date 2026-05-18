@@ -1,0 +1,31 @@
+<p-menubar class="farm-header">
+
+  <!-- LEFT: LOGO -->
+  <ng-template pTemplate="start">
+    <div class="logo">
+     <a routerLink="/" class="logo-link" >
+      🌾 <span>KisanSetu</span>
+    </a>
+    </div>
+  </ng-template>
+
+  <!-- CENTER: SEARCH -->
+  <ng-template pTemplate="center">
+    <span class="search-box p-input-icon-left">
+      <i class="pi pi-search"></i>
+      <input type="text" pInputText placeholder="Search products..." />
+    </span>
+  </ng-template>
+
+  <!-- RIGHT: MENU -->
+  <ng-template pTemplate="end">
+    <ul class="right-menu">
+      @for (item of menuItems; track item.label) {
+        <li>
+          <a [routerLink]="item.link">{{ item.label }}</a>
+        </li>
+      }
+    </ul>
+  </ng-template>
+
+</p-menubar>

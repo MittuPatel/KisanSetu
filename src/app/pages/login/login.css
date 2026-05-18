@@ -1,0 +1,44 @@
+
+.login-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7f6;
+}
+
+.login-card {
+  width: 350px;
+  padding: 20px;
+  margin: 30px;
+}
+
+.field {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 10px;
+  background: #2e7d32;
+  border: none;
+}
+
+.p-password-toggle-mask-icon {
+margin: -8px 10px;
+}
+
+.field-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 8px;
+}
+
+.login-card[_ngcontent-ng-c720985568] {
+    width: 350px;
+    padding: 20px;
+    margin: 40px;
+}

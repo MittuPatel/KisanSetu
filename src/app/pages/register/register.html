@@ -1,0 +1,84 @@
+<div class="register-container">
+
+  <p-card header="Register to KisanSetu" class="register-card">
+
+    <!-- User Type -->
+    <div class="field">
+      <label>I am</label>
+      <div class="radio-group">
+        <p-radioButton name="type" value="customer" [(ngModel)]="userType"></p-radioButton>
+        <label>Customer</label>
+
+        <p-radioButton name="type" value="vendor" [(ngModel)]="userType"></p-radioButton>
+        <label>Vendor</label>
+      </div>
+    </div>
+
+    <!-- Market -->
+    <div class="field">
+      <label>Select Your KisanSetu Market</label>
+      <p-select
+        [options]="markets"
+        [(ngModel)]="market"
+        optionLabel="label"
+        placeholder="Select market">
+      </p-select>
+    </div>
+
+    <!-- Hear about -->
+    <div class="field">
+      <label>How did you hear about us?</label>
+      <p-select
+        [options]="hearOptions"
+        [(ngModel)]="hearAbout"
+        optionLabel="label"
+        placeholder="Select option">
+      </p-select>
+    </div>
+
+
+<div class="field">
+      <label>Phone*</label>
+       <!-- #phone="ngModel" -->
+      <input
+          pInputText
+          type="tel"
+          [(ngModel)]="phone"
+
+
+          pattern="^[0-9]{10}$"
+          maxlength="10"
+          placeholder="Enter 10-digit phone number" />
+
+        <!-- <div *ngIf="phone.invalid && phone.touched" style="color:rgb(34, 32, 32)">
+          Enter a valid phone number
+        </div> -->
+    </div>
+
+    <!-- Email -->
+    <div class="field">
+      <label>Email</label>
+      <input pInputText [(ngModel)]="email" placeholder="Enter email" />
+    </div>
+
+    <!-- Password -->
+    <div class="field">
+      <label>Password</label>
+      <p-password [(ngModel)]="password" [toggleMask]="true"></p-password>
+    </div>
+
+    <!-- Button -->
+
+    <button
+      pButton
+      label="Create Account"
+      icon="pi pi-sign-in"
+      class="register-btn"
+      (click)="register()">
+    </button>
+
+
+
+  </p-card>
+
+</div>

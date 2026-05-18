@@ -1,0 +1,89 @@
+<section class="contact-page">
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <div class="contact-container">
+
+    <!-- Left Content -->
+    <div class="contact-left">
+
+      <h1>Contact KisanSetu</h1>
+
+      <p>
+        Connect directly with farmers and buyers across India.
+      </p>
+
+      <!-- <div class="contact-info">
+        <p>📍 Bangalore, India</p>
+        <p>📞 +91 9876543210</p>
+        <p>📧 support@kisansetu.com</p>
+      </div> -->
+
+    </div>
+
+    <!-- Contact Form -->
+    <p-card class="contact-card">
+
+      <!-- Name -->
+      <div class="field">
+        <label>Name</label>
+        <input
+          pInputText
+          [(ngModel)]="name"
+          placeholder="Enter your name">
+      </div>
+
+      <!-- Email -->
+      <div class="field">
+        <label>Email</label>
+        <input
+          pInputText
+          [(ngModel)]="email"
+          placeholder="Enter your email">
+      </div>
+
+      <!-- Phone -->
+      <div class="field">
+        <label>Phone</label>
+        <input
+          pInputText
+          [(ngModel)]="phone"
+          type="tel"
+          maxlength="10"
+          placeholder="Enter your phone number">
+      </div>
+
+      <!-- Subject -->
+      <div class="field">
+        <label>Subject</label>
+        <input
+          pInputText
+          [(ngModel)]="subject"
+          placeholder="Enter subject">
+      </div>
+
+      <!-- Message -->
+      <div class="field">
+        <label>Message</label>
+        <textarea
+          pInputTextarea
+          [(ngModel)]="message"
+          rows="5"
+          placeholder="Write your message">
+        </textarea>
+      </div>
+
+      <!-- Button -->
+      <button
+        pButton
+        label="Send Message"
+        class="send-btn"
+        (click)="submitForm()">
+      </button>
+
+    </p-card>
+
+  </div>
+
+</section>
